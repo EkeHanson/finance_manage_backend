@@ -79,7 +79,7 @@ else:  # development
 
 ALLOWED_HOSTS = env.list(
     "ALLOWED_HOSTS", 
-    default=["localhost", "127.0.0.1", "auth_service", "0.0.0.0", "backend", "127.0.0.1:9090", "localhost:9090"]
+    default=["localhost", "127.0.0.1", "auth_service", "0.0.0.0", "backend", "127.0.0.1:9090", "localhost:9090", "https://finance-manage-backend.onrender.com"]
 )
 
 
