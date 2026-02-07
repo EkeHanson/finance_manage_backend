@@ -41,25 +41,17 @@ if IS_PRODUCTION:
         "https://crm-frontend-react.vercel.app",
         "https://finance-manager-ruby.vercel.app",
         "https://task-manager-two-plum.vercel.app",
-        "https://technicalglobaladministrator.e3os.co.uk",
-        "https://dev.e3os.co.uk",
-        "https://e3os.co.uk"
     ]
-    DEFAULT_FRONTEND_URL = "https://e3os.co.uk"
+    DEFAULT_FRONTEND_URL = "https://www.google.com"
 elif IS_STAGING:
     FRONTEND_URLS = [
-        "https://e3os.co.uk",
         "https://crm-frontend-react.vercel.app",
        "https://finance-manager-ruby.vercel.app",
        "https://task-manager-two-plum.vercel.app",
-        "https://technicalglobaladministrator.e3os.co.uk",
-        "https://dev.e3os.co.uk",
-        "https://e3os.co.uk"
     ]
     DEFAULT_FRONTEND_URL = "https://loan-management-rho.vercel.app"
 else:  # development
     FRONTEND_URLS = [
-        "https://dev.e3os.co.uk",
         "http://localhost:5173",
         "http://localhost:5174",
         "http://localhost:4000",
@@ -68,7 +60,6 @@ else:  # development
         "http://localhost:4000",
         "http://localhost:3001",
         "http://127.0.0.1:3000",
-        "https://dev.e3os.co.uk",
     ]
     DEFAULT_FRONTEND_URL = "http://localhost:5173"
     REVIEWS_QR_BASE_URL = "http://localhost:5173"

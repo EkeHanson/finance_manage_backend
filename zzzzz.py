@@ -88,14 +88,14 @@ with tenant_context(tenant):
 
 
 from core.models import Tenant, Domain
-if not Tenant.objects.filter(schema_name='public').exists():
+if not Tenant.objects.filter(schema_name='public1').exists():
     tenant = Tenant.objects.create(
-        name='public',
-        schema_name='public',
+        name='public1',
+        schema_name='public1',
     )
     tenant.auto_create_schema = False
     tenant.save()
-    Domain.objects.create(tenant=tenant, domain='public.com', is_primary=True)
+    Domain.objects.create(tenant=tenant, domain='localhost', is_primary=True)
 
 from core.models import Tenant, Domain
 if not Tenant.objects.filter(schema_name='auth-service').exists():
@@ -105,7 +105,7 @@ if not Tenant.objects.filter(schema_name='auth-service').exists():
     )
     tenant.auto_create_schema = False
     tenant.save()
-    Domain.objects.create(tenant=tenant, domain='auth-service', is_primary=True)
+    Domain.objects.create(tenant=tenant, domain='localhost', is_primary=True)
 
 
 from core.models import Tenant, Domain
