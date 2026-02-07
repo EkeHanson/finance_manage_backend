@@ -60,6 +60,7 @@ else:  # development
         "http://localhost:4000",
         "http://localhost:3001",
         "http://127.0.0.1:3000",
+        "https://finance-manager-ruby.vercel.app"
     ]
     DEFAULT_FRONTEND_URL = "http://localhost:5173"
     REVIEWS_QR_BASE_URL = "http://localhost:5173"

@@ -131,6 +131,18 @@ if not Tenant.objects.filter(schema_name='netwiver').exists():
 
 
 from core.models import Tenant, Domain
+if not Tenant.objects.filter(schema_name='onrender').exists():
+    tenant = Tenant.objects.create(
+        name='onrender',
+        schema_name='onrender',
+        status="active"
+    )
+    tenant.auto_create_schema = False
+    tenant.save()
+    Domain.objects.create(tenant=tenant, domain='finance-manage-backend.onrender.com', is_primary=True)
+
+
+from core.models import Tenant, Domain
 if not Tenant.objects.filter(schema_name='rodrimine').exists():
     tenant = Tenant.objects.create(
         name='rodrimine',
